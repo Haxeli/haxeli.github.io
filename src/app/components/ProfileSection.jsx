@@ -11,6 +11,10 @@ const ProfileSection = () => {
             <p className={styles.headerParagraph}>
                 This project is a work-in-progress portfolio built by using Next.js and React
             </p>
+            <div>
+                <button className={styles.button}>Contact me</button>
+                <button className={styles.button}>Download CV</button>
+            </div>
             <div className={styles.profileImageContainer}>
                 <Image
                     className={styles.profileImage}
