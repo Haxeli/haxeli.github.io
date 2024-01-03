@@ -1,0 +1,92 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.headerTitle {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.headerParagraph {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.profileImageContainer {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+
+.profileImage {
+    width: 400px;
+    height: 400px;
+}
+
+@media screen and (min-width: 320px) {
+    .headerTitle {
+        font-size: 2rem;
+    }
+
+    .headerParagraph {
+        font-size: 1rem;
+    }
+
+    .profileImageContainer {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profileImage {
+        width: 150px;
+        height: 150px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .headerTitle {
+        font-size: 2.75rem;
+    }
+
+    .headerParagraph {
+        font-size: 1.5rem;
+    }
+
+    .profileImageContainer {
+        width: 250px;
+        height: 250px;
+    }
+
+    .profileImage {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .headerTitle {
+        font-size: 3.75rem;
+    }
+
+    .headerParagraph {
+        font-size: 1.75rem;
+    }
+
+    .profileImageContainer {
+        width: 400px;
+        height: 400px;
+    }
+
+    .profileImage {
+        width: 400px;
+        height: 400px;
+    }
+}
