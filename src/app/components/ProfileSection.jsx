@@ -11,6 +11,17 @@ const ProfileSection = () => {
             <p className={styles.headerParagraph}>
                 This project is a work-in-progress portfolio built by using Next.js and React
             </p>
+            <div className={styles.socialMediaContainer}>
+                <a className={styles.socialMediaLink} href='https://github.com/Haxeli' target='blank'>
+                    GitHub
+                </a>
+                <a className={styles.socialMediaLink} href='https://www.linkedin.com/in/aleksi-hannula/' target='blank'>
+                    LinkedIn
+                </a>
+                <a className={styles.socialMediaLink} href='https://gamedevgains.itch.io/' target='blank'>
+                    Itch.io
+                </a>
+            </div>
             <div>
                 <button className={styles.button}>Contact me</button>
                 <button className={styles.button}>Download CV</button>

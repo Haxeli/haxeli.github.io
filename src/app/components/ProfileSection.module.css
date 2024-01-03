@@ -18,10 +18,22 @@
     margin-bottom: 1rem;
 }
 
+.socialMediaContainer {
+    font-size: 1.15rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.socialMediaLink {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
 .button {
     font-family: monospace;
     font-size: 1rem;
-    border: none;
+    border: 0.15rem solid white;
     border-radius: 5rem;
     background-color: rgb(27, 27, 27);
     padding: 1rem;
@@ -55,6 +67,10 @@
         font-size: 1rem;
     }
 
+    .socialMediaContainer {
+        font-size: 1rem;
+    }
+
     .button {
         margin-bottom: 1rem;
     }
@@ -78,6 +94,10 @@
 
     .headerParagraph {
         font-size: 1.5rem;
+    }
+
+    .socialMediaContainer {
+        font-size: 1.15rem;
     }
 
     .profileImageContainer {
