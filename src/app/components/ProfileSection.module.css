@@ -1,24 +1,32 @@
 .gridContainer {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 1rem;
     margin-bottom: 2rem;
+    grid-template-areas: 
+        "header image"
+        "paragraph image"
+        "social image"
+        "button image";
 }
 
 .headerTitle {
+    grid-area: header;
     font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
 .headerParagraph {
+    grid-area: paragraph;
     font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: 1rem;
 }
 
 .socialMediaContainer {
+    grid-area: social;
     font-size: 1.15rem;
     display: flex;
     flex-direction: row;
@@ -26,11 +34,13 @@
 }
 
 .socialMediaLink {
+    grid-area: social;
     margin-right: 2rem;
     margin-bottom: 1rem;
 }
 
 .button {
+    grid-area: button;
     font-family: monospace;
     font-size: 1rem;
     border: 0.15rem solid white;
@@ -47,6 +57,10 @@
 }
 
 .profileImageContainer {
+    position: absolute;
+    right: 20rem;
+    grid-area: image;
+    grid-column: 2;
     border-radius: 50%;
     overflow: hidden;
     width: 400px;
