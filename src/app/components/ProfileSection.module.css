@@ -48,8 +48,11 @@
     color: black;
 }
 
-.button {
+.buttonContainer {
     grid-area: button;
+}
+
+.button {
     font-family: monospace;
     font-size: 1rem;
     border: 0.15rem solid white;

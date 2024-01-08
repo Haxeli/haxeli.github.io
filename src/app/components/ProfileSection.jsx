@@ -22,7 +22,7 @@ const ProfileSection = () => {
                     Itch.io
                 </a>
             </div>
-            <div>
+            <div className={styles.buttonContainer}>
                 <button className={styles.button}>Contact me</button>
                 <button className={styles.button}>Download CV</button>
             </div>
