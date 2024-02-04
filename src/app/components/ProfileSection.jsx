@@ -7,7 +7,7 @@ const ProfileSection = () => {
   return (
     <section>
         <div className={styles.gridContainer}>
-            <h1 className={styles.headerTitle}>{"Hello, I'm Aleksi"}</h1>
+            <h1 className={styles.headerTitle}>{"Hello, I'm "}<span className={styles.headerName}>Aleksi</span></h1>
             <p className={styles.headerParagraph}>
                 This project is a work-in-progress portfolio built by using Next.js and React
             </p>

@@ -21,7 +21,32 @@
     font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+    background: #FF00CC;
+    background: linear-gradient(to right, #B774F4 0%, #D52570 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+.headerName {
+    background: #e7e7e7;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*
+    background: #FF00CC;
+    background: linear-gradient(90deg, #FF00CC 0%, #333399 100%) 0 0 / 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 8s linear infinite;
+    */
+}
+
+/*
+@keyframes gradient {
+    to {
+        background-position: 300% 0;
+    }
+}
+*/
 
 .headerParagraph {
     grid-area: paragraph;
