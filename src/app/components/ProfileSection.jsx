@@ -10,6 +10,7 @@ const ProfileSection = () => {
     <section>
         <div className={styles.gridContainer}>
             <h1 className={styles.headerTitle}>{"Hello, I'm "}
+                <br />
                 <span className={styles.headerName}>
                     <TypeAnimation
                         sequence={[
