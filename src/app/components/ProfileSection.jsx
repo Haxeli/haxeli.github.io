@@ -1,13 +1,33 @@
+"use client"
 import React from 'react'
 import styles from './ProfileSection.module.css'
 import Image from 'next/image'
 import profilePicture from '../../../public/profile-square3.jpg'
+import { TypeAnimation } from 'react-type-animation'
 
 const ProfileSection = () => {
   return (
     <section>
         <div className={styles.gridContainer}>
-            <h1 className={styles.headerTitle}>{"Hello, I'm "}<span className={styles.headerName}>Aleksi</span></h1>
+            <h1 className={styles.headerTitle}>{"Hello, I'm "}
+                <span className={styles.headerName}>
+                    <TypeAnimation
+                        sequence={[
+                            'Aleksi',
+                            1000,
+                            'a web developer',
+                            1000,
+                            'a game developer',
+                            1000,
+                            'a UI/UX designer',
+                            1000
+                        ]}
+                        wrapper="span"
+                        speed={50}
+                        repeat={Infinity}
+                    />
+                </span>
+            </h1>
             <p className={styles.headerParagraph}>
                 This project is a work-in-progress portfolio built by using Next.js and React
             </p>
