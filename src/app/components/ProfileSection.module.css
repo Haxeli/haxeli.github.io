@@ -60,8 +60,8 @@
 }
 
 .button {
-    background-image: linear-gradient(to right, #ff00cc 0%, #333399  51%, #ff00cc  100%);
-    font-family: monospace;
+    background-image: linear-gradient(to top left, #FF00CC 0%, #1f65b4 100%);
+    font-family: '__Inter_e66fe9';
     font-size: 1rem;
     text-align: center;
     border-radius: 5rem;
