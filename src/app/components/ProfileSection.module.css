@@ -1,0 +1,198 @@
+.gridContainer {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+    min-width: 100vw;
+    grid-template-areas: 
+        "header"
+        "paragraph"
+        "social"
+        "button"
+        "image";
+    justify-items: center;
+}
+
+.headerTitle {
+    grid-area: header;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: #FF00CC;
+    background: linear-gradient(to right, #B774F4 0%, #D52570 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.headerName {
+    background: #e7e7e7;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*
+    background: #FF00CC;
+    background: linear-gradient(90deg, #FF00CC 0%, #333399 100%) 0 0 / 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 8s linear infinite;
+    */
+}
+
+/*
+@keyframes gradient {
+    to {
+        background-position: 300% 0;
+    }
+}
+*/
+
+.headerParagraph {
+    grid-area: paragraph;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.socialMediaContainer {
+    grid-area: social;
+    font-size: 1.15rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.socialMediaLink {
+    grid-area: social;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: inset 0 0 0 0 black;
+    padding: 0.5rem;
+    color: white;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.socialMediaLink:hover {
+    box-shadow: inset 100px 0 0 0 white;
+    color: black;
+}
+
+.buttonContainer {
+    grid-area: button;
+    display: flex;
+    gap: 3rem;
+}
+
+.button {
+    background-image: linear-gradient(to top left, #FF00CC 0%, #1f65b4 100%);
+    font-family: '__Inter_e66fe9';
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5rem;
+    background-size: 200% auto;
+    color: white;
+    padding: 1rem 3rem;
+    transition: background-position 0.5s;
+    border: none;
+}
+
+.button:hover {
+    background-position: right center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.profileImageContainer {
+    position: static;
+    right: auto;
+    grid-area: image;
+    grid-column: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+
+.profileImage {
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (min-width: 480px) {
+    .gridContainer {
+        padding: 3rem;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header"
+            "paragraph"
+            "social"
+            "button"
+            "image";
+    }
+
+    .headerTitle {
+        font-size: 2.5rem;
+    }
+
+    .headerParagraph {
+        font-size: 1.25rem;
+    }
+
+    .socialMediaContainer {
+        font-size: 1rem;
+    }
+
+    .profileImageContainer {
+        position: static;
+        right: auto;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .profileImage {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .gridContainer {
+        padding: 6rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "header image"
+            "paragraph image"
+            "social image"
+            "button image";
+    }
+
+    .headerTitle {
+        font-size: 3.75rem;
+    }
+
+    .headerParagraph {
+        font-size: 1.75rem;
+    }
+
+    .socialMediaContainer {
+        font-size: 1.15rem;
+    }
+
+    .button {
+        padding: 1.2rem 5rem;
+    }
+
+    .profileImageContainer {
+        position: absolute;
+        right: 20rem;
+        width: 400px;
+        height: 400px;
+    }
+    
+    .profileImage {
+        width: 400px;
+        height: 400px;
+    }
+}
