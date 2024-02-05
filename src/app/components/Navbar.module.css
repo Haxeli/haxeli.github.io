@@ -1,0 +1,50 @@
+.navbarWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+/* Hide the menu by default */
+#menu {
+    display: none;
+}
+
+/* Style the burger icon */
+#menuToggle input {
+    display: block;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    background: #000;
+}
+
+/* Show the menu when the checkbox is checked */
+#menuToggle input:checked ~ #menu {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    /* Show the menu and hide the burger icon on desktop */
+    #menu {
+        display: block;
+    }
+
+    #menuToggle input,
+    #menuToggle span {
+        display: none;
+    }
+
+    /* Style the menu links for desktop */
+    #menu li {
+        display: inline;
+        margin-right: 1rem;
+    }
+}

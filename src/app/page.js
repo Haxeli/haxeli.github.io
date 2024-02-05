@@ -1,5 +1,6 @@
 //import styles from './page.module.css'
 import ProfileSection from './components/ProfileSection'
+import Navbar from './components/Navbar'
 
 export const metadata = {
     title: 'Aleksi Hannula - Portfolio',
@@ -9,6 +10,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main>
+      <Navbar />
       <ProfileSection />
     </main>
   )
