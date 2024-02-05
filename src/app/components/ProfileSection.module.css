@@ -25,12 +25,14 @@
     background: #FF00CC;
     background: linear-gradient(to right, #B774F4 0%, #D52570 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .headerName {
     background: #e7e7e7;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     /*
     background: #FF00CC;
